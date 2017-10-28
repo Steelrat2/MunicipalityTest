@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="com.tamunicipality.task.fragments.MainFragment">
+
+    <TextView
+        android:id="@+id/textViewRegions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@android:color/white"
+        android:text="@string/regions"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerList"
+        android:name="com.tamunicipality.task.fragments.RegionsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        tools:context="com.tamunicipality.task.fragments.MainFragment"
+        tools:listitem="@layout/list_item_regions" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MunicipalityTest</string>
+    <string name="regions">Regions</string>
+    <string name="countries">Countries</string>
+    <string name="region">region</string>
+    <string name="country">country</string>
+    <string name="border_countries">"Border countries of "</string>
+    <string name="capital_city">"Capital City: "</string>
+    <string name="currencies">"Currencies: "</string>
+    <string name="currency">"Currency: "</string>
+</resources>

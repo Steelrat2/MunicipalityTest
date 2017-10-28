@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:clickable="false"
+    tools:context="com.tamunicipality.task.fragments.CountryFragment">
+
+    <TextView
+        android:id="@+id/textViewCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="14dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@android:color/white"
+        android:clickable="false"
+        />
+
+    <TextView
+        android:id="@+id/textViewCountryCapitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="14dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@android:color/white"
+        android:text="@string/regions"
+        android:clickable="false"
+        />
+
+    <TextView
+        android:id="@+id/textViewCountryCurrenciesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="14dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@android:color/white"
+        android:text="@string/regions"
+        android:clickable="false"
+        />
+
+    <TextView
+        android:id="@+id/textViewBorders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@android:color/white"
+        android:text="@string/regions"
+        android:clickable="false"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerListCountries"
+        android:name="com.tamunicipality.task.fragments.CountryFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        tools:context="com.tamunicipality.task.fragments.CountryFragment"
+        tools:listitem="@layout/list_item_regions" />
+</LinearLayout>
